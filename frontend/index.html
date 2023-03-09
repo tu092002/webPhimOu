@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebPhimOU</title>
+    <!-- script -->
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- link bootrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -39,12 +42,16 @@
     ></script>
     <!-- end mdb -->
     <!-- font awesomw -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="container">
         <header
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
@@ -59,18 +66,18 @@
           <ul
             class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
           >
-            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+            <li><a href="#" class="nav-link px-2 link-secondary">Nhật bản</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Hàn quốc</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Mỹ</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Thailand</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Hongkong</a></li>
           </ul>
 
           <div class="col-md-3 text-end">
             <button type="button" class="btn btn-outline-primary me-2">
-              Login
+              Đăng nhập
             </button>
-            <button type="button" class="btn btn-primary">Sign-up</button>
+            <button type="button" class="btn btn-primary">Đăng kí</button>
           </div>
         </header>
       </nav>
@@ -143,7 +150,7 @@
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
-
+    <hr>
     <section class="container">
       <div class="row g-10">
         <div class="themeMovies col-lg-4">
@@ -316,18 +323,30 @@
             </div>
           </div>
           <!-- Pills content -->
+          
         </div>
-        <div class="col-lg-4">hello</div>
+        <div class="col-lg-4">
+          <div class="docThem">
+            <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#demo1">
+                Về trang của chúng tôi
+            </button>
+
+            <div id="demo1" class="collapse">Ưu điểm:
+
+              Kho phim đồ sộ với đủ các thể loại phim tình cảm, lãng mạn, phim hài, phim hành động... Các bộ phim được cập nhật hàng tuần, vì vậy tuần nào trên web cũng có thêm nhiều phim mới. 
+              Mỗi bộ phim đều có đầy đủ các thông tin từ hãng sản xuất, quốc gia sản xuất, thời lượng, năm phát hành, số tập để người dùng tiện theo dõi
+              Người dùng không phải trả phí khi xem phim trên web
+              Nhược điểm:
+              
+              Chất lượng xem phim không đảm bảo, đôi khi còn bị giật lag</div>
+          </div>
+        </div>
       </div>
+      <hr>
+      <div class="title">
+        <h2 class="text text-primary">Các phim đặc sắc trong tháng</h2>
 
-      <div class="docThem">
-        <button data-bs-toggle="collapse" data-bs-target="#demo">
-          Collapsible
-        </button>
-
-        <div id="demo" class="collapse">Lorem ipsum dolor text....</div>
       </div>
-
       <div class="listFilm row">
         <div class="card film col-lg-3">
           <img class="card-img-top" src="./static/img/antman.jpeg" />
@@ -376,84 +395,46 @@
       </div>
     </section>
 
+    <button id="topBtn">Go to Top</button>
+
     <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container-fluid" style="background-color: #333;color:#fff">
+    <footer class="footer">
+      <div class="container-lg">
         <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">
-              Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to
-              help the upcoming programmers with the code. Scanfcode focuses on
-              providing the most efficient code or snippets as the code wants to
-              be simple. We will help programmers build up concepts in different
-              programming languages that include C, C++, Java, HTML, CSS,
-              Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.
-            </p>
+          <div class="col-lg-3 col-sm-6">
+            <h4>About Us</h4>
+            <p>We are a movie streaming website that offers a wide selection of movies for our users to enjoy.</p>
           </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Categories</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-              <li>
-                <a href="http://scanfcode.com/category/front-end-development/"
-                  >UI Design</a
-                >
-              </li>
-              <li>
-                <a href="http://scanfcode.com/category/back-end-development/"
-                  >PHP</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://scanfcode.com/category/java-programming-language/"
-                  >Java</a
-                >
-              </li>
-              <li>
-                <a href="http://scanfcode.com/category/android/">Android</a>
-              </li>
-              <li>
-                <a href="http://scanfcode.com/category/templates/">Templates</a>
-              </li>
+          <div class="col-lg-3 col-sm-6">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">TV Shows</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-              <li>
-                <a href="http://scanfcode.com/contribute-at-scanfcode/"
-                  >Contribute</a
-                >
-              </li>
-              <li>
-                <a href="http://scanfcode.com/privacy-policy/"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          <div class="col-lg-3 col-sm-6">
+            <h4>Follow Us</h4>
+            <ul class="social">
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
             </ul>
           </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">
-              Copyright &copy; 2017 All Rights Reserved by
-              <a href="#">Scanfcode</a>.
-            </p>
+          <div class="col-lg-3 col-sm-6">
+            <h4>Subscribe</h4>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter your email">
+              </div>
+              <button type="submit" class="btn btn-primary">Liên hệ </button>
+            </form>
           </div>
         </div>
       </div>
     </footer>
-
-
-
+    
     <script src="./js/main.js"></script>
   </body>
 </html>
