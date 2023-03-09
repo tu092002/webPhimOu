@@ -16,4 +16,4 @@ class Film(models.Model):
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     def __str__(self):
-        return self.subject
+        return self.name
