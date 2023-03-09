@@ -57,7 +57,7 @@
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
         >
           <a
-            href="/"
+            href="./index.html"
             class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
           >
             WEBPHIMOU
@@ -66,7 +66,9 @@
           <ul
             class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
           >
-            <li><a href="#" class="nav-link px-2 link-secondary">Nhật bản</a></li>
+            <li>
+              <a href="#" class="nav-link px-2 link-secondary">Nhật bản</a>
+            </li>
             <li><a href="#" class="nav-link px-2 link-dark">Hàn quốc</a></li>
             <li><a href="#" class="nav-link px-2 link-dark">Mỹ</a></li>
             <li><a href="#" class="nav-link px-2 link-dark">Thailand</a></li>
@@ -74,10 +76,12 @@
           </ul>
 
           <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2">
+            <button type="button" class="btnLogin btn btn-outline-primary me-2">
               Đăng nhập
             </button>
-            <button type="button" class="btn btn-primary">Đăng kí</button>
+            <button type="button" class="btnRegister btn btn-primary">
+              Đăng kí
+            </button>
           </div>
         </header>
       </nav>
@@ -150,24 +154,21 @@
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
-    <hr>
+    <hr />
     <section class="container">
       <div class="row g-10">
         <div class="themeMovies col-lg-4">
           <div class="themeMovie">
-            <img src="./static/img/Tuyen-Tap-Marvel.jpg" alt="" />
+            <img src="./static/img/Tuyen-Tap-DC.jpg" alt="" />
           </div>
           <div class="themeMovie">
             <img src="./static/img/Tuyen-Tap-Marvel.jpg" alt="" />
           </div>
           <div class="themeMovie">
-            <img src="./static/img/Tuyen-Tap-Marvel.jpg" alt="" />
+            <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="" />
           </div>
           <div class="themeMovie">
-            <img src="./static/img/Tuyen-Tap-Marvel.jpg" alt="" />
-          </div>
-          <div class="themeMovie">
-            <img src="./static/img/Tuyen-Tap-Marvel.jpg" alt="" />
+            <img src="./static/img/phim-netflix.jpg" alt="" />
           </div>
         </div>
 
@@ -222,30 +223,83 @@
               aria-labelledby="ex1-tab-1"
             >
               Tab 1 content
-              <div class="list-group">
-                <div class="list-group-item list-group-item-action d-flex">
-                  <img
-                    style="max-width: 100px"
-                    src="./static/img/dragonBallGt.jpg"
-                    alt=""
-                  />
-                  <h5 class="card-title">Dragonball gt</h5>
+              <div class="list-Movie">
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
                 </div>
-                <div class="list-group-item list-group-item-action d-flex">
-                  <img
-                    style="max-width: 100px"
-                    src="./static/img/dragonBallGt.jpg"
-                    alt=""
-                  />
-                  <h5 class="card-title">Dragonball gt</h5>
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/antman.jpeg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
                 </div>
-                <div class="list-group-item list-group-item-action d-flex">
-                  <img
-                    style="max-width: 100px"
-                    src="./static/img/dragonBallGt.jpg"
-                    alt=""
-                  />
-                  <h5 class="card-title">Dragonball gt</h5>
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/naruto.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
+                </div>
+
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
+                </div>
+
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
                 </div>
               </div>
             </div>
@@ -256,32 +310,85 @@
               aria-labelledby="ex1-tab-2"
             >
               Tab 2 content
-              <div class="list-group">
-                <div class="list-group">
-                  <div class="list-group-item list-group-item-action d-flex">
-                    <img
-                      style="max-width: 100px"
-                      src="./static/img/naruto.jpg"
-                      alt=""
-                    />
-                    <h5 class="card-title">Dragonball gt</h5>
-                  </div>
-                  <div class="list-group-item list-group-item-action d-flex">
-                    <img
-                      style="max-width: 100px"
-                      src="./static/img/naruto.jpg"
-                      alt=""
-                    />
-                    <h5 class="card-title">Dragonball gt</h5>
-                  </div>
-                  <div class="list-group-item list-group-item-action d-flex">
-                    <img
-                      style="max-width: 100px"
-                      src="./static/img/naruto.jpg"
-                      alt=""
-                    />
-                    <h5 class="card-title">Dragonball gt</h5>
-                  </div>
+              <div class="list-Movie">
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
+                </div>
+
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
+                </div>
+
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
+                </div>
+
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
+                </div>
+
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
                 </div>
               </div>
             </div>
@@ -292,60 +399,97 @@
               aria-labelledby="ex1-tab-3"
             >
               Tab 3 content
-              <div class="list-group">
-                <div class="list-group">
-                  <div class="list-group-item list-group-item-action d-flex">
-                    <img
-                      style="max-width: 100px"
-                      src="./static/img/antman.jpeg"
-                      alt=""
-                    />
-                    <h5 class="card-title">Dragonball gt</h5>
-                  </div>
-                  <div class="list-group-item list-group-item-action d-flex">
-                    <img
-                      style="max-width: 100px"
-                      src="./static/img/antman.jpeg"
-                      alt=""
-                    />
-                    <h5 class="card-title">Dragonball gt</h5>
-                  </div>
-                  <div class="list-group-item list-group-item-action d-flex">
-                    <img
-                      style="max-width: 100px"
-                      src="./static/img/antman.jpeg"
-                      alt=""
-                    />
-                    <h5 class="card-title">Dragonball gt</h5>
-                  </div>
+              <div class="list-Movie">
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
+                </div>
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
+                </div>
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
+                </div>
+                <div class="movie" >
+                  <a
+                    class="movie-link"
+                    title="Ông Tơ, Bà Nguyệt"
+                    href="#"
+                    ><div class="thumbn" style="width: 100px;">
+                      <img src="./static/img/Co-Trang-Trung-Quoc.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                      <span class="name-vn link">Ông Tơ, Bà Nguyệt</span
+                      ><span class="name-en"> The Wedding Do Over</span>
+                    </div></a
+                  >
+                  <div class="eps">82 phút</div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Pills content -->
-          
         </div>
         <div class="col-lg-4">
           <div class="docThem">
-            <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#demo1">
-                Về trang của chúng tôi
+            <button
+              class="btn btn-success"
+              data-bs-toggle="collapse"
+              data-bs-target="#demo1"
+            >
+              Về trang của chúng tôi
             </button>
 
-            <div id="demo1" class="collapse">Ưu điểm:
-
-              Kho phim đồ sộ với đủ các thể loại phim tình cảm, lãng mạn, phim hài, phim hành động... Các bộ phim được cập nhật hàng tuần, vì vậy tuần nào trên web cũng có thêm nhiều phim mới. 
-              Mỗi bộ phim đều có đầy đủ các thông tin từ hãng sản xuất, quốc gia sản xuất, thời lượng, năm phát hành, số tập để người dùng tiện theo dõi
-              Người dùng không phải trả phí khi xem phim trên web
-              Nhược điểm:
-              
-              Chất lượng xem phim không đảm bảo, đôi khi còn bị giật lag</div>
+            <div id="demo1" class="collapse">
+              Ưu điểm: Kho phim đồ sộ với đủ các thể loại phim tình cảm, lãng
+              mạn, phim hài, phim hành động... Các bộ phim được cập nhật hàng
+              tuần, vì vậy tuần nào trên web cũng có thêm nhiều phim mới. Mỗi bộ
+              phim đều có đầy đủ các thông tin từ hãng sản xuất, quốc gia sản
+              xuất, thời lượng, năm phát hành, số tập để người dùng tiện theo
+              dõi Người dùng không phải trả phí khi xem phim trên web Nhược
+              điểm: Chất lượng xem phim không đảm bảo, đôi khi còn bị giật lag
+            </div>
           </div>
         </div>
       </div>
-      <hr>
+      <hr />
       <div class="title">
         <h2 class="text text-primary">Các phim đặc sắc trong tháng</h2>
-
       </div>
       <div class="listFilm row">
         <div class="card film col-lg-3">
@@ -403,7 +547,10 @@
         <div class="row">
           <div class="col-lg-3 col-sm-6">
             <h4>About Us</h4>
-            <p>We are a movie streaming website that offers a wide selection of movies for our users to enjoy.</p>
+            <p>
+              We are a movie streaming website that offers a wide selection of
+              movies for our users to enjoy.
+            </p>
           </div>
           <div class="col-lg-3 col-sm-6">
             <h4>Quick Links</h4>
@@ -417,24 +564,34 @@
           <div class="col-lg-3 col-sm-6">
             <h4>Follow Us</h4>
             <ul class="social">
-              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
             </ul>
           </div>
           <div class="col-lg-3 col-sm-6">
             <h4>Subscribe</h4>
             <form>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Enter your email">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
               </div>
-              <button type="submit" class="btn btn-primary">Liên hệ </button>
+              <button type="submit" class="btn btn-primary">Liên hệ</button>
             </form>
           </div>
         </div>
       </div>
     </footer>
-    
+
     <script src="./js/main.js"></script>
   </body>
 </html>
