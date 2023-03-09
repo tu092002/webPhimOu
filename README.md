@@ -6,6 +6,11 @@ Web xem phim là một dự án web xem phim trực tuyến, với các công ng
 Ở phía Backend, sử dụng python DJANGO, và cơ sở dữ liệu sử dụng MYSQL
 Với các thư viện cài thêm là RestFramework, Scor,...
 Để cài đặt web xem phim chúng ta cần thực hiện các bước sau
+
+
+
+
+
 Bước 1: Sử dụng git clone repository từ dự án về máy mình, 
 Bước 2: Mở VS code lên và tiến hành cài các thư viện cần thiết trên Terminal
 -	Pip install django,
