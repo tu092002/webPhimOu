@@ -17,6 +17,9 @@ class FilmViewSet(viewsets.ModelViewSet):
         cate_id = self.request.query_params.get('category_id')
         if cate_id:
             q = q.filter(category_id=cate_id)
+        id = self.request.query_params.get('id')
+        if id:
+            q = q.filter(id=id)
         return q
 
 class CategoryViewSet(viewsets.ModelViewSet):
