@@ -88,11 +88,26 @@ div.themeMovie>img {
 }
 
 /* header */
-.header {
+
+header.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
   background-color: #1a1818;
+  
 }
 
-.header a {
+header.header.sticky {
+
+  transform: translateY(-100%);
+  position: fixed;
+
+}
+
+
+header.header a {
   color: #fff !important;
 
 }
@@ -160,4 +175,40 @@ div.thumbn {
 div.thumbn img {
   width: 100%;
   height: 100%;
+}
+
+
+/* movie card1 */
+.movie-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card1 {
+  background: #000;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.card1 img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card1 h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card1 p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
 }
