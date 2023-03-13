@@ -9,12 +9,20 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-import os.path
+
 from pathlib import Path
 import pymysql
 pymysql.install_as_MySQLdb()
+from django.http import HttpResponse
+
+def my_view(request):
+    response = HttpResponse('Hello World')
+    response['Access-Control-Allow-Origin'] = '*' # cho phép truy cập từ tất cả các nguồn
+    response['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS' # cho phép các phương thức HTTP
+    return response
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,8 +33,6 @@ SECRET_KEY = 'django-insecure-czoxd5_w868b2^-vz3lmn3l-b(t)#^^-#e!+d9t1uu_)dwml5f
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-MEDIA_ROOT = '%s/film/static/' % BASE_DIR
 
 ALLOWED_HOSTS = []
 
@@ -60,7 +66,6 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
-
 
 ROOT_URLCONF = 'webphim.urls'
 
@@ -133,10 +138,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
-
-
-STATIC_ROOT = 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
