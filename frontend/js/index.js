@@ -2,24 +2,24 @@
 const HOST = "http://127.0.0.1:5500/"
 const SERVER = "http://localhost:8000"
 
-window.addEventListener("scroll", function () {
-  var topBtn = document.getElementById("topBtn");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
-  // nhấn nút go to top
-  var topBtn = document.getElementById("topBtn");
-  if (topBtn != null) {
-    topBtn.addEventListener("click", function () {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    });
+// window.addEventListener("scroll", function () {
+//   var topBtn = document.getElementById("topBtn");
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     topBtn.style.display = "block";
+//   } else {
+//     topBtn.style.display = "none";
+//   }
+//   // nhấn nút go to top
+//   var topBtn = document.getElementById("topBtn");
+//   if (topBtn != null) {
+//     topBtn.addEventListener("click", function () {
+//       document.body.scrollTop = 0;
+//       document.documentElement.scrollTop = 0;
+//     });
 
-  }
+//   }
 
-});
+// });
 
 document.addEventListener("DOMContentLoaded", async function () {
   let searchFilmBtn = document.querySelector(".searchFilmBtn");
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     e.onclick = async () => {
       let id = e.getAttribute("data-id");
       localStorage.setItem("id", id);
-      window.location = "detailPhim.html";
+      window.location = "detailFilm.html";
     };
   });
 });
@@ -65,7 +65,11 @@ async function getFilmData(kw) {
 
   let data = await fetch(url, {
     headers: { "Content-Type": "application/json" },
-  }).then((res) => res.json());
+  }).then((res) => res.json())
+    .then((data) => {
+      // console.log(data)
+      return data
+    });
 
   return data;
 }
@@ -96,13 +100,14 @@ async function getFilmData(kw) {
 
 function renderFilmList(container, data) {
   let html = "";
+  console.log(data)
   data.forEach((item) => {
     html += `
           <div class="col-md-4">
               <div class="img-hover-home">
                 <img
-                  src="${item.thumnail}"
-                  data-src="${item.thumnail}"
+                  src="${item.thumbnail}"
+                  data-src="${item.thumbnail}"
                   class="lazy loaded w-100 hover-overlay img-home"
                   data-was-processed="true"
                 />

@@ -1,10 +1,10 @@
-// import { SERVER } from "./constant.js";
 
 const HOST = "http://127.0.0.1:5500/"
 const SERVER = "http://localhost:8000"
 
 document.addEventListener("DOMContentLoaded", async function () {
   let eachFilmContainer = document.querySelector(".eachFilm-container");
+  
   let id = localStorage.getItem("id");
   let eachFilmData = await getEachFilmData(id);
   //  Test api cinema
@@ -33,7 +33,7 @@ async function getEachFilmData(id) {
   let data = await fetch(url, {
     headers: { "Content-Type": "application/json" },
   }).then((res) => res.json());
-
+  console.log(data)
   return data;
 }
 
@@ -59,7 +59,7 @@ function renderEachFilmList(container, data) {
     <div class="col-6 movie-image">
       <div class="movie-l-img">
         <img
-          src="${data.image}"
+          src="${data.thumbnail}"
         />
         <div class="docThem">
           <button
