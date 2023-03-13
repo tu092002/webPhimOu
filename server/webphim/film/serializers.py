@@ -5,7 +5,7 @@ from .models import Film, Category
 class FilmSerializer(ModelSerializer):
     class Meta:
         model = Film
-        fields = ['id', 'name', 'created_date', 'category']
+        fields = ['id', 'name', 'created_date', 'category', 'thumbnail', 'description', 'srcFilm']
 
 
 class CategorySerializer(ModelSerializer):

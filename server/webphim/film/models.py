@@ -14,7 +14,9 @@ class Film(models.Model):
     updated_date = models.DateTimeField(auto_now=True)
     active = models.BooleanField(default=True)
     thumbnail = models.ImageField(upload_to='%y/%m/', null=True)
+    srcFilm = models.TextField(max_length=255)
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
+
 
 
     def __str__(self):
