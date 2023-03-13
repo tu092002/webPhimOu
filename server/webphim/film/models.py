@@ -13,11 +13,16 @@ class Film(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
     active = models.BooleanField(default=True)
-    thumbnail = models.ImageField(upload_to='%y/%m/', null=True)
+    thumbnail = models.ImageField(upload_to='static/%y/%m/', null=True)
     srcFilm = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
+    def __str__(self):
+        return self.name
 
 
-
+class User(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+    username = models.CharField(max_length=100, unique=True)
+    password = models.CharField(max_length=100, unique=True)
     def __str__(self):
         return self.name

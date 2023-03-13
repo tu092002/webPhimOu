@@ -1,6 +1,6 @@
 from rest_framework import viewsets, permissions
-from .models import Film, Category
-from .serializers import FilmSerializer, CategorySerializer
+from .models import Film, Category, User
+from .serializers import FilmSerializer, CategorySerializer, UserSerializer
 
 
 class FilmViewSet(viewsets.ModelViewSet):
@@ -25,4 +25,8 @@ class FilmViewSet(viewsets.ModelViewSet):
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
