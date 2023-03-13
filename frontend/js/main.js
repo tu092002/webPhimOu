@@ -30,40 +30,40 @@ window.onload = () => {
 
 
 
-fetch('http://127.0.0.1:8000/film/')
-  .then(response => response.json())
-  // .then(json => {
-  //   json.forEach((item) => {
-  //     console.log(item.name)
-  //   })
-  // })
-  .then(movies => {
+// fetch('http://127.0.0.1:8000/film/')
+//   .then(response => response.json())
+//   // .then(json => {
+//   //   json.forEach((item) => {
+//   //     console.log(item.name)
+//   //   })
+//   // })
+//   .then(movies => {
 
-    const container = document.querySelector('.movie-cards');
+//     const container = document.querySelector('.movie-cards');
 
-    movies.forEach((movie) => {
-      console.log(movie)
+//     movies.forEach((movie) => {
+//       console.log(movie)
 
-      const card = document.createElement('div');
-      card.classList.add('card1');
+//       const card = document.createElement('div');
+//       card.classList.add('card1');
 
-      const image = document.createElement('img');
-      image.src = movie.image;
-      image.alt = movie.name;
-      card.appendChild(image);
+//       const image = document.createElement('img');
+//       image.src = movie.image;
+//       image.alt = movie.name;
+//       card.appendChild(image);
 
-      const title = document.createElement('h2');
-      title.textContent = movie.name;
-      card.appendChild(title);
+//       const title = document.createElement('h2');
+//       title.textContent = movie.name;
+//       card.appendChild(title);
 
-      const description = document.createElement('p');
-      description.textContent = movie.description;
-      card.appendChild(description);
+//       const description = document.createElement('p');
+//       description.textContent = movie.description;
+//       card.appendChild(description);
 
-      container.appendChild(card);
-    });
+//       container.appendChild(card);
+//     });
 
-  })
+//   })
 
 
 
