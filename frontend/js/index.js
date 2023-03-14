@@ -103,12 +103,12 @@ function renderFilmList(container, data) {
   console.log(data)
   data.forEach((item) => {
     html += `
-          <div class="col-md-4">
-              <div class="img-hover-home">
+          <div class="col-md-3">
+              <div class="img-hover-home position-relative" style="height:300px" >
                 <img
                   src="${item.thumbnail}"
                   data-src="${item.thumbnail}"
-                  class="lazy loaded w-100 hover-overlay img-home"
+                  class="lazy loaded w-100 h-100 hover-overlay img-home"
                   data-was-processed="true"
                 />
                 <div class="middle-home">
