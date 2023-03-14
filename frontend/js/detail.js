@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 async function getEachFilmData(id) {
   let url = `${SERVER}/film/`;
 
-  if (id) url += `${id}`;
+  if (id) url += `?id=${id}`;
   console.log(url);
 
   let data = await fetch(url, {
@@ -57,27 +57,11 @@ function renderEachFilmList(container, data) {
   html += `
     <div class="row">
     <div class="col-6 movie-image">
-      <div class="movie-l-img">
-        <img
-          src="${data.thumbnail}"
-        />
-        <div class="docThem">
-          <button
-            class="btn btn-primary"
-            data-bs-toggle="collapse"
-            data-bs-target="#demo"
-          >
-            NỘI DUNG PHIM
-          </button>
-          <div id="demo" class="collapse">
-           ${data.description}
-          </div>
-        </div>
-      </div>
+      ${data[0].srcFilm}
     </div>
     <div class="col-6 movie-detail">
       <h1 class="movie-title">
-        <span class="title-1" itemprop="name">${data.name}</span>
+        <span class="title-1" itemprop="name">${data[0].name}</span>
       </h1>
       <div
         class="slimScrollDiv"
@@ -100,7 +84,7 @@ function renderEachFilmList(container, data) {
             <dd class="movie-dd dd-cat">
               <a
                 class="director"
-                href="https://hiphimmoi.net/director/kim-hong-sun"
+                href="#"
                 title="Kim Hong-sun"
                 >Kim Hong-sun</a
               >,
@@ -109,9 +93,9 @@ function renderEachFilmList(container, data) {
             <dt class="movie-dt">Quốc gia:</dt>
             <dd class="movie-dd dd-cat">
               <a
-                href="https://hiphimmoi.net/country/han-quoc"
+                href="#"
                 title="Hàn Quốc"
-                >Hàn Quốc</a
+                >${data[0].category}</a
               >,
             </dd>
             <br />
@@ -233,6 +217,21 @@ function renderEachFilmList(container, data) {
           <span class="hidden" itemprop="reviewCount">4</span>
         </span>
       </div>
+
+
+
+      <div class="docThem">
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            data-bs-target="#demo"
+          >
+            NỘI DUNG PHIM
+          </button>
+          <div id="demo" class="collapse">
+           ${data[0].description}
+          </div>
+        </div>
     </div>
   </div>
       `;
